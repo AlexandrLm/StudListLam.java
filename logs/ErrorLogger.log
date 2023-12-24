@@ -435,3 +435,181 @@ org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксис
 	at org.example.Main.addStudent(Main.java:109)
 	at org.example.Main.main(Main.java:68)
 
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 16 числа 12 месяца в 22:00
+Сигнатура ошибки: com.thoughtworks.xstream.security.ForbiddenClassException
+Сообщение исключения: ru.esstu.Student
+Сообщение об ошибке: Ошибка при загрузке данных из XML
+Причина возникновения ошибки: метод loadFromXml класса ru.esstu.StudentListXML
+
+Стек вызовов:
+com.thoughtworks.xstream.security.ForbiddenClassException: ru.esstu.Student
+	at com.thoughtworks.xstream.security.NoTypePermission.allows(NoTypePermission.java:26)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:125)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:47)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:131)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:117)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.addCurrentElementToCollection(CollectionConverter.java:99)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.populateCollection(CollectionConverter.java:92)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.populateCollection(CollectionConverter.java:86)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.unmarshal(CollectionConverter.java:81)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:74)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:68)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:52)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:136)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1464)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1441)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1330)
+	at ru.esstu.StudentListXML.loadFromXml(StudentListXML.java:81)
+	at ru.esstu.StudentListXML.<init>(StudentListXML.java:19)
+	at org.example.Main.main(Main.java:38)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 16 числа 12 месяца в 22:02
+Сигнатура ошибки: com.thoughtworks.xstream.security.ForbiddenClassException
+Сообщение исключения: ru.esstu.Student
+Сообщение об ошибке: Ошибка при загрузке данных из XML
+Причина возникновения ошибки: метод loadFromXml класса ru.esstu.StudentListXML
+
+Стек вызовов:
+com.thoughtworks.xstream.security.ForbiddenClassException: ru.esstu.Student
+	at com.thoughtworks.xstream.security.NoTypePermission.allows(NoTypePermission.java:26)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:125)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:47)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:131)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readItem(AbstractCollectionConverter.java:117)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.addCurrentElementToCollection(CollectionConverter.java:99)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.populateCollection(CollectionConverter.java:92)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.populateCollection(CollectionConverter.java:86)
+	at com.thoughtworks.xstream.converters.collections.CollectionConverter.unmarshal(CollectionConverter.java:81)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:74)
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:68)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:52)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:136)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1464)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1441)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1330)
+	at ru.esstu.StudentListXML.loadFromXml(StudentListXML.java:81)
+	at ru.esstu.StudentListXML.<init>(StudentListXML.java:19)
+	at org.example.Main.main(Main.java:38)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при получении списка студентов
+Причина возникновения ошибки: метод getAll класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1819)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:518)
+	at ru.esstu.StudentListDatabase.getAll(StudentListDatabase.java:34)
+	at org.example.Main.displayStudents(Main.java:90)
+	at org.example.Main.main(Main.java:65)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при получении списка студентов
+Причина возникновения ошибки: метод getAll класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1819)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:518)
+	at ru.esstu.StudentListDatabase.getAll(StudentListDatabase.java:34)
+	at org.example.Main.displayStudents(Main.java:88)
+	at org.example.Main.main(Main.java:65)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при получении списка студентов
+Причина возникновения ошибки: метод getAll класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1819)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:518)
+	at ru.esstu.StudentListDatabase.getAll(StudentListDatabase.java:34)
+	at org.example.Main.displayStudents(Main.java:90)
+	at org.example.Main.main(Main.java:65)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при добавлении студента
+Причина возникновения ошибки: метод add класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1826)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:523)
+	at ru.esstu.StudentListDatabase.add(StudentListDatabase.java:56)
+	at org.example.Main.addStudent(Main.java:110)
+	at org.example.Main.main(Main.java:68)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при получении списка студентов
+Причина возникновения ошибки: метод getAll класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1819)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:518)
+	at ru.esstu.StudentListDatabase.getAll(StudentListDatabase.java:34)
+	at org.example.Main.displayStudents(Main.java:88)
+	at org.example.Main.main(Main.java:65)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ВОЗНИКЛА ОШИБКА
+Детали:
+Временная метка: 24 числа 12 месяца в 23:23
+Сигнатура ошибки: org.postgresql.util.PSQLException
+Сообщение исключения: Соединение уже было закрыто
+Сообщение об ошибке: Ошибка при получении списка студентов
+Причина возникновения ошибки: метод getAll класса ru.esstu.StudentListDatabase
+
+Стек вызовов:
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:1819)
+	at org.postgresql.jdbc.PgConnection.createStatement(PgConnection.java:518)
+	at ru.esstu.StudentListDatabase.getAll(StudentListDatabase.java:34)
+	at org.example.Main.displayStudents(Main.java:90)
+	at org.example.Main.main(Main.java:65)
+

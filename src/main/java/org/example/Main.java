@@ -75,6 +75,8 @@ public class Main {
                     break;
                 case 5:
                     exitProgram = true;
+
+
                     break;
                 default:
                     System.out.println("Неверный выбор. Пожалуйста, выберите действие от 1 до 5.");

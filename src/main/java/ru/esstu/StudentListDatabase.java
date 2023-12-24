@@ -27,9 +27,9 @@ public class StudentListDatabase implements StudentList {
             throw new RuntimeException("Не удалось установить соединение с БД");
         }
     }
-
     @Override
     public List<Student> getAll() {
+        //Statement statement = null;
         List<Student> students = new ArrayList<>();
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery("SELECT * FROM student")) {
@@ -42,10 +42,13 @@ public class StudentListDatabase implements StudentList {
                 String group = resultSet.getString("grooup");
 
                 students.add(new Student(id, firstName, lastName, partonymicName, group));
+                connection.close();
             }
         } catch (SQLException e) {
             ErrorHandler.handleException(e, "Ошибка при получении списка студентов");
         }
+
+
         return students;
     }
 
@@ -61,6 +64,7 @@ public class StudentListDatabase implements StudentList {
             statement.setString(5, student.getGroup());
 
             statement.executeUpdate();
+            connection.close();
         } catch (SQLException e) {
             ErrorHandler.handleException(e, "Ошибка при добавлении студента");
         }
@@ -81,6 +85,7 @@ public class StudentListDatabase implements StudentList {
 
                 return new Student(id, firstName, lastName, partonymicName, group);
             }
+            connection.close();
         } catch (SQLException e) {
             ErrorHandler.handleException(e, "Ошибка при получении студента по ID");
         }
@@ -93,6 +98,7 @@ public class StudentListDatabase implements StudentList {
 
             statement.setString(1, id);
             statement.executeUpdate();
+            connection.close();
         } catch (SQLException e) {
             ErrorHandler.handleException(e, "Ошибка при удалении студента");
         }
@@ -108,6 +114,7 @@ public class StudentListDatabase implements StudentList {
             statement.setString(4, student.getGroup());
             statement.setString(5, student.getId());
             statement.executeUpdate();
+            connection.close();
         } catch (SQLException e) {
             ErrorHandler.handleException(e, "Ошибка при обновлении студента");
         }
